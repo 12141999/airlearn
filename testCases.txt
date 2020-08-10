@@ -1,0 +1,189 @@
+// for addQuestionPaper Api
+
+[{"type" : "GS" ,
+ "userId": "123" , 
+ "questionPaperData" : [
+    {
+        "question" : "largest country in world" , 
+        "options" : ["india" , "china" ,  "Russia" , "USA"],
+        "correctAns" : "Russia"
+    },
+    {
+        "question" : "favourite character in GOT" , 
+        "options" : ["denaris" , "jon snow" ,  "tyrion" , "arya"],
+        "correctAns" : "jon snow"
+    },
+    {
+        "question" : "favourite character in Marvels" , 
+        "options" : ["captain" , "thor" ,  "iron man" , "hulk"],
+        "correctAns" : "captain"
+    }
+] 
+},
+{"type" : "iit jee" ,
+ "userId": "456" , 
+ "questionPaperData" : [
+    {
+        "question" : "gravity constant value" , 
+        "options" : [10 , 9.8 , 10.2 , 11],
+        "correctAns" : 9.8
+    },
+    {
+        "question" : "scientists who give theoram of relativity" , 
+        "options" : ["einstien" , "newton" ,  "aryabhatta" , "robert"],
+        "correctAns" : "einstien"
+    },
+    {
+        "question" : "best periodic table donater" , 
+        "options" : ["Mojle" , "Mendeleef" ,  "ABC" , "XYZ"],
+        "correctAns" : "Mendeleef"
+    }
+] 
+},
+{"type" : "polity" ,
+ "userId": "789" , 
+ "questionPaperData" : [
+    {
+        "question" : "India's 1st prime minister" , 
+        "options" : ["nehru" , "modi" ,  "gandhi" , "vajpeyi"],
+        "correctAns" : "nehru"
+    },
+    {
+        "question" : "largest state in india by area" , 
+        "options" : ["UP" , "MP" ,  "orisa" , "Rajasthan"],
+        "correctAns" : "Rajasthan"
+    },
+    {
+        "question" : "india capital" , 
+        "options" : ["Delhi" , "Noida" ,  "Kolkata" , "chennai"],
+        "correctAns" : "Delhi"
+    }
+] 
+},
+{"type" : "CS" ,
+ "userId": "149" , 
+ "questionPaperData" : [
+    {
+        "question" : "CS best language" , 
+        "options" : ["CPP" , "Javascript" ,  "Python" , "Java"],
+        "correctAns" : "CPP"
+    },
+    {
+        "question" : "CS opportunities %" , 
+        "options" : [50 , 60 ,  80 , 90],
+        "correctAns" : 90
+    },
+    {
+        "question" : "most useable data structures" , 
+        "options" : ["Trees" , "Array" ,  "linked list" , "map"],
+        "correctAns" : "Array"
+    }
+] 
+}]
+
+
+
+//////////////////
+
+total types - 4
+
+1. iit jee
+2. polity
+3. GS
+4. CS
+
+
+///////////////////
+
+[
+    {
+    "name" : "robin",
+    "email" : "robinjain9587@gmail.com",
+    "userName" : "rj1214",
+    "address" : "HND",
+    "age" : 20,
+    "questionsIdArray" : []
+    },
+    {
+    "name" : "john",
+    "email" : "john9587@gmail.com",
+    "userName" : "jn1214",
+    "address" : "HND",
+    "age" : 20,
+    "questionsIdArray" : []
+    },
+    {
+    "name" : "prince",
+    "email" : "prince9587@gmail.com",
+    "userName" : "pr214",
+    "address" : "HND",
+    "age" : 20,
+    "questionsIdArray" : []
+    },
+    {
+    "name" : "prakhar",
+    "email" : "prakhar9587@gmail.com",
+    "userName" : "pkhr1214",
+    "address" : "HND",
+    "age" : 20,
+    "questionsIdArray" : []
+    }
+]
+
+////////////////////////////
+
+// search data with type or userId  
+
+// for type testCase
+
+{
+    "type" : "iit jee"
+}
+
+or 
+
+{
+    "type" : "GS"
+}
+
+or 
+
+{
+    "type" : "CS"
+}
+
+or 
+
+{
+    "type" : "polity"
+}
+
+/////////////////////////////////////
+// for get result Api 
+// you can put null if you want to skip the question  or  wrong ans
+// for type is GS
+
+{
+    "ansArray" : ["Russia" , "jonsnow" , "captain"]
+}
+
+// for type is polity
+
+{
+    "ansArray" : ["nehru" , "Rajasthan" , "Delhi"]
+}
+
+// for type is iit jee
+
+{
+    "ansArray" : [9.8 , "einstien" , "Mendeleef"]
+}
+
+// for type is CS
+
+{
+    "ansArray" : ["CPP" , 90 , "Array"]
+}
+
+////////////////////////////////////////////
+
